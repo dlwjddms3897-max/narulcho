@@ -3,12 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>교직원 희망도서 목록</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .book {
+      width: 150px;
+      text-align: center;
+    }
+    .book img {
+      width: 150px;
+      height: auto;
+      border: 1px solid #ddd;
+    }
+    .title {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .meta {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>교직원 희망도서 안내</h1>
-  <ul>
-    <li><a href="https://search.kyobobook.co.kr/search?keyword=아몬드">아몬드</a></li>
-    <li><a href="https://search.kyobobook.co.kr/search?keyword=불편한편의점">불편한 편의점</a></li>
-  </ul>
+  <h1>📚 교직원 희망도서 안내</h1>
+
+  <div class="book-list">
+
+    <!-- 책 1 -->
+    <div class="book">
+      <a href="https://search.kyobobook.co.kr/search?keyword=아몬드">
+        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788936434267.jpg" alt="아몬드 표지">
+      </a>
+      <div class="title">아몬드</div>
+      <div class="meta">손원평 · 창비</div>
+    </div>
+
+    <!-- 책 2 -->
+    <div class="book">
+      <a href="https://search.kyobobook.co.kr/search?keyword=불편한편의점">
+        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791161571188.jpg" alt="불편한 편의점 표지">
+      </a>
+      <div class="title">불편한 편의점</div>
+      <div class="meta">김호연 · 나무옆의자</div>
+    </div>
+
+  </div>
 </body>
 </html>
